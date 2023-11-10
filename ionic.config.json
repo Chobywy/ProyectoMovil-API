@@ -1,0 +1,7 @@
+{
+  "name": "AppClaudia",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

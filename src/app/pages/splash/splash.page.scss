@@ -1,0 +1,32 @@
+ion-content, ion-text, p, h1, h2, h3, h4, h5, h6, a, span, div, label, button {
+  color: #ffffff;
+}
+
+ion-content, body {
+  --background: #121212;
+}
+  
+  .DuocLogo {
+    position: absolute;
+    left: 30%;
+    transform: translateX(-50%);
+    top: 50%;
+    transform: scale(1.2);
+  }
+  
+  .loading {
+    position: absolute;
+    left: 46%;
+    transform: translateX(-50%), scale(1.2);
+    top: 60%;
+  }
+
+  .fondo {
+    --background: url('../../../assets/img/BackgroundDuoc.png') 0/100% 100%;
+  }
+
+  .cargando {
+    position: absolute;
+    top: 65%;
+    left: 36%;
+  }

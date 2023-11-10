@@ -1,0 +1,283 @@
+<ion-menu side="end" contentId="main-content">
+  <ion-header>
+    <ion-toolbar class="blanco">
+      <ion-title >Hola</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding"></ion-content>
+</ion-menu>
+<div class="ion-page" id="main-content">
+  <ion-header >
+    <ion-toolbar class="blanco">
+      <ion-title >Menu Principal</ion-title>
+      <ion-buttons slot="end">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <div class="wrapper">
+      <div class="rectangle">
+        <img src="../../../assets/img/foto-portada.png" alt="" class="ProfileBanner">
+        <img src="../../../assets/img/Cona-ProfilePicture.png" alt="" class="ProfilePicture">
+          <div class="info">
+            <div class="item">
+              <img class="profesion_foto" src="./../../../assets/img/profesion.png" alt="Imagen 1">
+              <div class="correo">{{correo_prof}} </div>
+            </div>
+            <div class="item">
+              <img class="sede_foto" src="./../../../assets/img/sede.png" alt="Imagen 2">
+              <div class="cumple">Fecha de Cumpleaños</div>
+              
+            </div>
+            <div class="item">
+              <img class="cumple_foto" src="./../../../assets/img/cumpleaños.png" alt="Imagen 3">
+              <div class="cumple2">12 / 03 / 1985</div>
+            </div>
+            <div class="item">
+              <img src="./../../../assets/img/fecha_cierre.png" alt="Imagen 4">
+              <div div class="cumple">Profesion</div>
+            </div>
+            <div class="item">
+              <div div class="profe_profesion">{{correo_prof}}</div>
+            </div>
+            <div class="item">
+              <div div class="sedex">Sede</div>
+            </div>
+            <div class="item">
+              <div div class="sede_ubicacion">Duoc UC - Puente Alto</div>
+            </div>
+          </div>
+        <div class="options-container">
+          <div class="rectangle-container">
+            <div class="rectangulo-blanco">
+              <span>Ver más información</span>
+            </div>
+          </div>
+        </div>
+        <div class="nombre_profe">{{profe}} {{apellido_prof}}</div>
+      </div>
+      <div class="materia">
+        <ion-accordion-group expand="inset" multiple="true">
+          <ion-accordion value="portafolio1" [toggleIcon]="false">
+            <ion-item slot="header" color="rose" class="header7" (click)="toggleAccordion('portafolio1')">
+              <div class="header-content">
+                <ion-label class="header-label">Proceso de Portafolio Final</ion-label>
+              </div>
+              <ion-label class="expand-colapse-label" slot="end" class="expandir">
+                {{ isAccordionOpen['portafolio1'] ? 'Colapsar' : 'Expandir' }}
+              </ion-label>
+              <ion-icon [name]="isAccordionOpen['portafolio1'] ? 'chevron-down-outline' : 'chevron-forward-outline'"
+                slot="end"></ion-icon>
+            </ion-item>
+            <!-- Contenido del acordeón -->
+            <div class="ion-padding" slot="content" [hidden]="!isAccordionOpen['portafolio1']">
+              <span class="fecha">08/07/2023</span>
+              <span class="fecha">Porcentaje Asistencia
+                <span class="estado">84%</span>
+              </span>
+              <br>
+              <span class="fecha">
+                <ion-button color="medium" (click)="verRegistro()">Ver Registro</ion-button>
+              </span>
+              <span class="estado">
+                <ion-button color="medium" (click)="registrarClase()">Registrar Clase</ion-button>
+              </span>
+            </div>
+          </ion-accordion>
+          <!-- ///////////////////////////////////////// -->
+          <ion-accordion value="portafolio2" [toggleIcon]="false">
+            <ion-item slot="header" color="rose" class="header7" (click)="toggleAccordion('portafolio2')">
+              <div class="header-content">
+                <ion-label class="header-label">Proceso de Portafolio Final</ion-label>
+              </div>
+              <ion-label class="expand-colapse-label" slot="end" class="expandir">
+                {{ isAccordionOpen['portafolio2'] ? 'Colapsar' : 'Expandir' }}
+              </ion-label>
+              <ion-icon [name]="isAccordionOpen['portafolio2'] ? 'chevron-down-outline' : 'chevron-forward-outline'"
+                slot="end"></ion-icon>
+            </ion-item>
+            <!-- Contenido del acordeón -->
+            <div class="ion-padding" slot="content" [hidden]="!isAccordionOpen['portafolio2']">
+              <span class="fecha">08/07/2023</span>
+              <span class="fecha">Porcentaje Asistencia
+                <span class="ausente">34%</span>
+              </span>
+              <br>
+              <span class="fecha">
+                <ion-button color="medium" (click)="verRegistro()">Ver Registro</ion-button>
+              </span>
+              <span class="estado">
+                <ion-button color="medium" (click)="registrarClase()">Registrar Clase</ion-button>
+              </span>
+            </div>
+          </ion-accordion>
+
+          <!-- ///////////////////////////////////////// -->
+          <ion-accordion value="portafolio3" [toggleIcon]="false">
+            <ion-item slot="header" color="rose" class="header7" (click)="toggleAccordion('portafolio3')">
+              <div class="header-content">
+                <ion-label class="header-label">Proceso de Portafolio Final</ion-label>
+              </div>
+              <ion-label class="expand-colapse-label" slot="end" class="expandir">
+                {{ isAccordionOpen['portafolio3'] ? 'Colapsar' : 'Expandir' }}
+              </ion-label>
+              <ion-icon [name]="isAccordionOpen['portafolio3'] ? 'chevron-down-outline' : 'chevron-forward-outline'"
+                slot="end"></ion-icon>
+            </ion-item>
+            <!-- Contenido del acordeón -->
+            <div class="ion-padding" slot="content" [hidden]="!isAccordionOpen['portafolio3']">
+              <span class="fecha">08/07/2023</span>
+              <span class="fecha">Porcentaje Asistencia
+                <span class="estado">84%</span>
+              </span>
+              <br>
+              <span class="fecha">
+                <ion-button color="medium" (click)="verRegistro()">Ver Registro</ion-button>
+              </span>
+              <span class="estado">
+                <ion-button color="medium" (click)="registrarClase()">Registrar Clase</ion-button>
+              </span>
+            </div>
+          </ion-accordion>
+          <!-- ///////////////////////////////////////// -->
+          <ion-accordion value="portafolio4" [toggleIcon]="false">
+            <ion-item slot="header" color="rose" class="header7" (click)="toggleAccordion('portafolio4')">
+              <div class="header-content">
+                <ion-label class="header-label">Proceso de Portafolio Final</ion-label>
+              </div>
+              <ion-label class="expand-colapse-label" slot="end" class="expandir">
+                {{ isAccordionOpen['portafolio4'] ? 'Colapsar' : 'Expandir' }}
+              </ion-label>
+              <ion-icon [name]="isAccordionOpen['portafolio4'] ? 'chevron-down-outline' : 'chevron-forward-outline'"
+                slot="end"></ion-icon>
+            </ion-item>
+            <!-- Contenido del acordeón -->
+            <div class="ion-padding" slot="content" [hidden]="!isAccordionOpen['portafolio4']">
+              <span class="fecha">08/07/2023</span>
+              <span class="fecha">Porcentaje Asistencia
+                <span class="estado">84%</span>
+              </span>
+              <br>
+              <span class="fecha">
+                <ion-button color="medium " (click)="verRegistro()">Ver Registro</ion-button>
+              </span>
+              <span class="estado">
+                <ion-button color="medium" (click)="registrarClase()">Registrar Clase</ion-button>
+              </span>
+            </div>
+          </ion-accordion>
+          <!-- ///////////////////////////////////////// -->
+          <ion-accordion value="portafolio5" [toggleIcon]="false">
+            <ion-item slot="header" color="rose" class="header8" (click)="toggleAccordion('portafolio5')">
+              <div class="header-content">
+                <ion-label class="header-label">Proceso de Portafolio Final</ion-label>
+              </div>
+              <ion-label class="expand-colapse-label" slot="end" class="expandir">
+                {{ isAccordionOpen['portafolio5'] ? 'Colapsar' : 'Expandir' }}
+              </ion-label>
+              <ion-icon [name]="isAccordionOpen['portafolio5'] ? 'chevron-down-outline' : 'chevron-forward-outline'"
+                slot="end"></ion-icon>
+            </ion-item>
+            <!-- Contenido del acordeón -->
+            <div class="ion-padding" slot="content" [hidden]="!isAccordionOpen['portafolio5']">
+              <span class="fecha">08/07/2023</span>
+              <span class="fecha">Porcentaje Asistencia
+                <span class="estado">84%</span>
+              </span>
+              <br>
+              <span class="fecha">
+                <ion-button color="medium" (click)="verRegistro()">Ver Registro</ion-button>
+              </span>
+              <span class="estado">
+                <ion-button color="medium" (click)="registrarClase()">Registrar Clase</ion-button>
+              </span>
+            </div>
+          </ion-accordion>
+          <!-- ///////////////////////////////////////// -->
+          <ion-accordion value="portafolio6" [toggleIcon]="false">
+            <ion-item slot="header" color="rose" class="header8" (click)="toggleAccordion('portafolio6')">
+              <div class="header-content">
+                <ion-label class="header-label">Proceso de Portafolio Final</ion-label>
+              </div>
+              <ion-label class="expand-colapse-label" slot="end" class="expandir">
+                {{ isAccordionOpen['portafolio6'] ? 'Colapsar' : 'Expandir' }}
+              </ion-label>
+              <ion-icon [name]="isAccordionOpen['portafolio6'] ? 'chevron-down-outline' : 'chevron-forward-outline'"
+                slot="end"></ion-icon>
+            </ion-item>
+            <!-- Contenido del acordeón -->
+            <div class="ion-padding" slot="content" [hidden]="!isAccordionOpen['portafolio6']">
+              <span class="fecha">08/07/2023</span>
+              <span class="fecha">Porcentaje Asistencia
+                <span class="estado">84%</span>
+              </span>
+              <br>
+              <span class="fecha">
+                <ion-button color="medium" (click)="verRegistro()">Ver Registro</ion-button>
+              </span>
+              <span class="estado">
+                <ion-button color="medium" (click)="registrarClase()">Registrar Clase</ion-button>
+              </span>
+            </div>
+          </ion-accordion>
+          <!-- ///////////////////////////////////////// -->
+          <ion-accordion value="portafolio5" [toggleIcon]="false" class="expandir">
+            <ion-item slot="header" color="rose" class="header8" (click)="toggleAccordion('portafolio7')">
+              <div class="header-content">
+                <ion-label class="header-label">Proceso de Portafolio Final</ion-label>
+              </div>
+              <ion-label class="expand-colapse-label" slot="end"class="expandir">
+                {{ isAccordionOpen['portafolio7'] ? 'Colapsar' : 'Expandir' }}
+              </ion-label>
+              <ion-icon [name]="isAccordionOpen['portafolio7'] ? 'chevron-down-outline' : 'chevron-forward-outline'"
+                slot="end"></ion-icon>
+            </ion-item>
+            <!-- Contenido del acordeón -->
+            <div class="ion-padding" slot="content" [hidden]="!isAccordionOpen['portafolio7']">
+              <span class="fecha">08/07/2023</span>
+              <span class="fecha">Porcentaje Asistencia
+                <span class="ausente">40%</span>
+              </span>
+              <br>
+              <span class="fecha">
+                <ion-button color="medium" (click)="verRegistro()">Ver Registro</ion-button>
+              </span>
+              <span class="estado">
+                <ion-button color="medium" (click)="registrarClase()">Registrar Clase</ion-button>
+              </span>
+            </div>
+          </ion-accordion>
+          <!-- ///////////////////////////////////////// -->
+          <ion-accordion value="portafolio8" [toggleIcon]="false">
+            <ion-item slot="header" color="rose" class="header8" (click)="toggleAccordion('portafolio8')">
+              <div class="header-content">
+                <ion-label class="header-label">Proceso de Portafolio Final</ion-label>
+              </div>
+              <ion-label class="expand-colapse-label" slot="end" class="expandir">
+                {{ isAccordionOpen['portafolio8'] ? 'Colapsar' : 'Expandir' }}
+              </ion-label>
+              <ion-icon [name]="isAccordionOpen['portafolio8'] ? 'chevron-down-outline' : 'chevron-forward-outline'"
+                slot="end"></ion-icon>
+            </ion-item>
+            <!-- Contenido del acordeón -->
+            <div class="ion-padding" slot="content" [hidden]="!isAccordionOpen['portafolio8']">
+              <span class="fecha">08/07/2023</span>
+              <span class="fecha">Porcentaje Asistencia
+                <span class="estado">84%</span>
+              </span>
+              <br>
+              <span class="fecha">
+                <ion-button color="medium" (click)="verRegistro()">Ver Registro</ion-button>
+              </span>
+              <span class="estado">
+                <ion-button color="medium" (click)="registrarClase()">Registrar Clase</ion-button>
+              </span>
+            </div>
+          </ion-accordion>
+        </ion-accordion-group>
+      </div>
+    </div>
+  </ion-content>
+</div>

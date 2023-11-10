@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+</ion-header>
+<ion-content [fullscreen]="true" [ngClass]="{'fondo': !showBackgroundColor, 'fondo-color': showBackgroundColor}">
+  <div class="container">
+    <div class="DuocLogo">
+      <img src="../../../assets/img/duocuclogo.png" alt="asdadasd" class="logo">
+    </div>
+
+    <p>
+      Restablecer contraseña
+    </p>
+  
+    <ion-list class="custom-list">
+      <ion-item class="custom-item">
+        <ion-input labelPlacement="floating" value="">
+          <div slot="label">Ingresa tu nombre de usuario <ion-text color="danger" *ngIf="showLabel"></ion-text></div>
+        </ion-input>
+      </ion-item>
+    </ion-list>
+
+    <div style="margin-bottom: 20px;"></div>
+
+    <ion-button class="button-ionic" (click)="irLoginM()">Restablecer</ion-button>
+
+    <div class="fondodes">
+      <ion-toggle [enableOnOffLabels]="true" (ionChange)="toggleBackground($event)">Ocultar imagen de fondo</ion-toggle>
+    </div>
+  </div>
+</ion-content>

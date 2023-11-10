@@ -1,0 +1,58 @@
+.titulo {
+    margin-top: 60px;
+    margin-left: 20px;
+    position: absolute;
+opacity: 60%;
+}
+
+ion-content, ion-text, p, h1, h2, h3, h4, h5, h6, a, span, div, label, button {
+    color: #ffffff;
+  }
+
+  ion-content, body {
+    --background: #121212;
+  }
+
+.barra {
+    position: fixed;
+    bottom: 860px;
+    right: 8px;
+    height: 2px;
+    background-color: #ffffff;
+    opacity: 60%;
+    width: calc(100% - 300px);
+}
+
+.notif {
+    display: flex;
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 40px;
+}
+
+.notify {
+    display: flex;
+    align-items: center;
+}
+
+.text1 {
+    margin-left: 10px;
+}
+
+.text2 {
+    margin-top: 35px;
+    margin-left: -190px;
+    opacity: 50%;
+    font-size: 14px;
+}
+
+.trash {
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.trash img{
+    margin-top: 120px;
+    margin-right: 20px;
+}

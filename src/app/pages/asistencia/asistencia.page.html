@@ -1,0 +1,85 @@
+<ion-menu side="end" contentId="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title >Menu Content</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding"></ion-content>
+</ion-menu>
+<div class="ion-page" id="main-content">
+  <ion-header >
+    <ion-toolbar class="blanco">
+      <ion-title >Registro de Asistencia</ion-title>
+      <ion-buttons slot="end">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content >
+    <div class="wrapper">
+      <div class="rectangle" >
+        <img src="../../../assets/img/proceso_foto.png" alt="" class="ProfileBanner" >
+        <div class="estadisticas">
+          <h2 class="titulos">Estadísticas Generales</h2>
+          <div class="info">
+            <div class="item">
+              <img src="./../../../assets/img/total_alum.png" alt="Imagen 1">
+              <div class="cumple">Alumnos Totales </div>
+            </div>
+            <div class="item">
+              <img src="./../../../assets/img/presentes_alum.png" alt="Imagen 2">
+              <div class="cumple">Alumnos Presentes</div>
+            </div>
+            <div class="item">
+              <img style="margin-left: -3px;" src="./../../../assets/img/porcentaje_asis.png" alt="Imagen 3">
+              <div class="cumple">Porcentaje de asistencia</div>
+            </div>
+            <div class="item">
+              <img src="./../../../assets/img/fecha_cierre.png" alt="Imagen 4">
+              <div div class="cumple">Fecha de cierre</div>
+            </div>
+          </div>
+          <div >
+            <div class="info-detalles1">25</div>
+            <div class="info-detalles2">21</div>
+            <div class="info-detalles3">84%</div>
+            <div class="info-detalles4">08/31/2023, 11:32pm</div>
+          </div>
+        </div>
+      </div>
+      <ion-button class="btn-azul" expand="block" color="dark" (click)="navigateToMenuWeb()">Volver al Menu Principal</ion-button>
+      <div >
+        <ion-list class="list-md">
+          <ion-item class="fondolist">
+            <ion-title >Apellidos</ion-title>
+            <ion-title slot="end">Nombres</ion-title>
+            <ion-title slot="end">Estado</ion-title>
+          </ion-item>
+          <ion-item class="fondolist">
+            <ion-title>Gonzalez Perez</ion-title>
+            <ion-title slot="end">Ana Maria</ion-title>
+            <ion-title slot="end" class="presente">• Presente</ion-title>
+          </ion-item>
+          <ion-item class="fondolist">
+            <ion-title>Rodriguez Martinez</ion-title>
+            <ion-title slot="end">Luis Alberto</ion-title>
+            <ion-title slot="end" class="ausente">ⓧ Ausente</ion-title>
+          </ion-item>
+          <ion-item class="fondolist">
+            <ion-title>Cona Cona</ion-title>
+            <ion-title slot="end">Cristobal Ignacio</ion-title>
+            <ion-title slot="end" class="presente">• Presente</ion-title>
+          </ion-item>
+          <ion-item class="fondolist">
+            <ion-title class="fondolist">Rodriguez Martinez</ion-title>
+            <ion-title slot="end"  >Luis Alberto</ion-title>
+            <ion-title slot="end" class="ausente">ⓧ Ausente</ion-title>
+          </ion-item >
+        </ion-list>
+      </div>
+      
+      
+    </div>
+  </ion-content>
+</div>
